@@ -10,3 +10,4 @@ mongoose.connect("mongodb://localhost:27017/Chinese-sale-serverS")
 app.use(express.json())
 app.use("/users", usersRout)
 app.listen(4500, () => { console.log("waiting") })
+
