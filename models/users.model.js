@@ -19,5 +19,6 @@ const OrderSchema=new mongoose.Schema(
         price:Number
     }
 )
+
 const Order=mongoose.model("orders",OrderSchema)
 module.exports={Order,OrderSchema}
