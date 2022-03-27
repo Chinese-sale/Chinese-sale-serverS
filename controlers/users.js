@@ -1,5 +1,6 @@
 const { Users } = require("../models/users.model").Users;
 const { Order } = require("../models/users.model");
+
 module.exports.addUser = async (req, res) => {
     let user = req.body;
     let u = new Users(user);

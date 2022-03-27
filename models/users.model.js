@@ -1,15 +1,4 @@
 const {  mongoose } = require("mongoose")
-const UsersSchema=new mongoose.Schema(
-    {
-        user_first:String,
-        user_last_name:String,
-        user_phone:String,
-        arr_orders:[OrderSchema]
-    }
-)
-
-const Users=mongoose.model("users",UsersSchema)
-module.exports={Users,UsersSchema}
 
 const OrderSchema=new mongoose.Schema(
     {
@@ -22,3 +11,15 @@ const OrderSchema=new mongoose.Schema(
 
 const Order=mongoose.model("orders",OrderSchema)
 module.exports={Order,OrderSchema}
+
+const UsersSchema=new mongoose.Schema(
+    {
+        user_first:String,
+        user_last_name:String,
+        user_phone:String,
+        arr_orders:[OrderSchema]
+    }
+)
+
+const Users=mongoose.model("users",UsersSchema)
+module.exports={Users,UsersSchema}
